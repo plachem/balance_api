@@ -10,7 +10,12 @@ development:
   <<: *default
   database: balance_api_development
 test:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  username: cna
+  password: Nwrsufb2kewds24rfeqa
+  host: 172.17.0.1
+  pool: 2
   database: balance_api_test
 production:
   <<: *default
